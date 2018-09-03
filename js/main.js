@@ -6,6 +6,9 @@ function saveBookmark(e) {
     var siteName = document.getElementById('site-name').value;
     var siteUrl = document.getElementById('site-url').value;
 
+    // Test the validation of the form
+    if (!validateForm(siteName, siteUrl)) return;
+
     var bookmark = {
         name: siteName,
         url: siteUrl,
@@ -32,7 +35,8 @@ function saveBookmark(e) {
     }
     // reset the display
     fetchBookmarks();
-
+    // reset the form
+    document.getElementById('myForm').reset();
     // Prevent form from submitting
     e.preventDefault();
 }
@@ -73,6 +77,32 @@ function fetchBookmarks() {
         var date = bookmarks[i].date;
 
         bookmarksResults.innerHTML += '<div class="well">' +
-            '<h3 style="text-transform: capitalize; display: inline-block;">' + name + '</h3>' + '<a style="display: inline-block;margin-left: 10px;" class="btn btn-dark" href="' + url + '" target="_blank">Visit</a>' + '<a style="display: inline-block;margin-left: 10px;" onclick="deleteBookmark(\'' + name + '\',\'' + url + '\')" class="btn btn-danger" href="#">Delete</a><p>' + date + '<P></div>'
+            '<h3 style="display: inline-block;" class="text-capitalize text-center">' + name + '</h3><a class="btn btn-dark my-btn" href="' + addhttp(url) + '" target="_blank">Visit</a>' + '<a onclick="deleteBookmark(\'' + name + '\',\'' + url + '\')" class="btn btn-danger my-btn" href="#">Delete</a>' + '<p>' + date + '<P></div>'
     }
+}
+
+// Validate Form
+function validateForm(name, url) {
+    // See if the form is fullfilled
+    if (!name || !url) {
+        alert('Please fill in the Form');
+        return false;
+    }
+
+    // See if input URL is valid
+    var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
+    var regex = new RegExp(expression);
+
+    if (!url.match(regex)) {
+        alert('Please pass in a valid URL');
+        return false;
+    }
+    return true;
+}
+
+function addhttp(url) {
+    if (!/^(?:f|ht)tps?\:\/\//.test(url)) {
+        url = "http://" + url;
+    }
+    return url;
 }
