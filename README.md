@@ -6,7 +6,7 @@ Simple bookmarker App designed using example theme from bootstrap 'Jumbotron' (s
 
 ## Try it
 
-[Demo](https://bousbissikouceila.github.io/simple-bookmarker/ "Link to Demo webpage")
+[Demo](https://bousbissikouceila.github.io/simple-bookmarkerApp/ "Link to Demo webpage")
 
 ## info
 

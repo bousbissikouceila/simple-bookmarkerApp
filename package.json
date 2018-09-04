@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bousbissikouceila/simple-bookmarker.git"
+    "url": "git+https://github.com/bousbissikouceila/simple-bookmarkerApp.git"
   },
   "keywords": [
     "Bookmark",
@@ -18,9 +18,9 @@
   "author": "Kouceïla BOUSBISSI",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bousbissikouceila/simple-bookmarker/issues"
+    "url": "https://github.com/bousbissikouceila/simple-bookmarkerApp/issues"
   },
-  "homepage": "https://bousbissikouceila.github.io/simple-bookmarker",
+  "homepage": "https://bousbissikouceila.github.io/simple-bookmarkerApp",
   "dependencies": {
     "gh-pages": "^1.2.0"
   }
