@@ -3,7 +3,7 @@
     "short_name": "Bookmarker",
     "description": "Simple Bookmarker App",
     "lang": "en-EN",
-    "start_url": "https://bousbissikouceila.github.io/simple-bookmarkerApp/",
+    "start_url": "https://bousbissikouceila.github.io/simple-bookmarkerApp/build",
     "display": "standalone",
     "orientation": "any",
     "theme_color": "#29a329",
