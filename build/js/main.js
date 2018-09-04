@@ -65,11 +65,17 @@ function fetchBookmarks() {
     // Get Bookmarks from localStorage
     var bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
 
+
+
     // Get Output id
     var bookmarksResults = document.getElementById('bookmarks-results');
 
     // Build output
     bookmarksResults.innerHTML = '';
+
+    // Control if there is at least a bookmark to display
+    if (bookmarks === null || bookmarks === []) return;
+
     // Iterate over bookmarks array
     for (var i = 0; i < bookmarks.length; i++) {
         var name = bookmarks[i].name;
