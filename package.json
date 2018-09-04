@@ -1,0 +1,23 @@
+{
+  "name": "bookmarkerwebpage",
+  "version": "1.0.0",
+  "description": "Bookmarker to websites working both online and offline",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bousbissikouceila/simple-bookmarker.git"
+  },
+  "keywords": [
+    "Bookmark",
+    "PWA"
+  ],
+  "author": "Kouceïla BOUSBISSI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bousbissikouceila/simple-bookmarker/issues"
+  },
+  "homepage": "https://bousbissikouceila.github.io/simple-bookmarker/"
+}
