@@ -22,6 +22,6 @@
   },
   "homepage": "https://bousbissikouceila.github.io/simple-bookmarkerApp",
   "dependencies": {
-    "gh-pages": "^1.2.0"
+    "gh-pages": "^2.0.1"
   }
 }
